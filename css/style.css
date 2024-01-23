@@ -1,0 +1,194 @@
+body {
+    background: rgb(11, 79, 252);
+
+}
+.game-boy {
+    width: 253px;
+    height: 391px;
+    background-color: rgb(255, 145, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3%;
+    border-bottom-right-radius: 50px;
+    box-shadow: 3px 5px 5px rgba(0,0,0,0.4);
+}
+
+.screen-border {
+    width: 80%;
+    height: 50%;
+    background-color: rgb(110, 110, 110);
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.line-red {
+    width: 90%;
+    height: 2px;
+    background-color: rgb(255, 17, 0);
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.screenOff, #screenOff {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10%;
+    left: 10%; 
+}
+
+.juego1, #pare {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%; 
+
+}
+
+.screenOn {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 10%;
+    left: 10%; 
+}
+
+.logo {
+    position:absolute;
+    top: 60%;
+    left: 18%;
+    width: 100%;
+    color: rgb(65,65,65);
+}
+
+.neintendo {
+    float: left;
+    font-weight: boder;
+    font-size: 10px;
+    line-height: 26px;  
+}
+
+.gb {
+    float: left;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.d-pad {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(211, 110, 1);
+    position: relative;
+    top: 70%;
+    left: 10%;
+    border-radius: 50px;
+}
+
+.d-y {
+    width: 13px;
+    height: 45px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+.d-x {
+    width: 45px;
+    height: 13px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+#izquierda {
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    background-color: black;
+    top: 40%;
+    left: 10%;
+}
+
+#derecha {
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    background-color: black;
+    top: 40%;
+    left: 60%;
+}
+
+.buttons {
+    width: 30px;
+    height: 70px;
+    background-color: rgb(211, 110, 1);
+    position: absolute;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    top: 69%;
+    right: 17%;
+    transform: rotate(60deg);
+    border-radius: 15px;
+}
+
+.b-a {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(54, 19, 213);
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    box-shadow: 2px 2px 2px rgba(114,49,49,0.418);
+}
+
+.b-b {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(104, 72, 230);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    box-shadow: rgba(114,49,49,0.418);
+}
+
+.buttons_s {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 84%;
+    left: 40%;
+}
+
+.start {
+    width: 40px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.2);
+}
+  
+.off {
+    width: 40px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: rgb(10, 10, 10);
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.2);
+}
+
