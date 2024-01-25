@@ -3,43 +3,64 @@ let botonApagado = document.getElementById('off');
 let pantallaOff = document.getElementById('screenOff'); 
 let pantallaOn = document.getElementById('screenOn'); 
 
-botonEncendido.addEventListener('click', function(){
+
+botonEncendido.addEventListener('click', function() {
     pantallaOn.classList.remove('screenoff');
     pantallaOn.classList.add('screenOn');
-    
+    pantallaOn.classList.add('backgroundInicio');
+    img.classList.add('opacity0');
 });
 
-botonApagado.addEventListener ('click', function(){
-    pantallaOn.classList.remove('juego1');
-    pantallaOn.classList.remove('screenOn');
+botonApagado.addEventListener('click', function() {
+    pantallaOn.classList.remove('backgroundInicio');
     pantallaOn.classList.add('screenOff');
-    
+    img.classList.add('opacity0');
 });
+
+let botonDerecha = document.querySelector('.derecha');
+let botonIzquierda = document.querySelector('.izquierda');
 
 let img1 = "../img/juego1.png";
 let img2 = "../img/juego2.png";
 let img3 = "../img/juego3.png";
 let img4 = "../img/juego4.png";
 
+let imagenesDeJuegos =[img1, img2, img3, img4];
+let img = document.getElementById('img');
 
-let imagenes =[img1, img2, img3, img4 ];
-let izquierda = document.getElementById("izquierda");
-let derecha = document.getElementById("derecha");
-let img = document.getElementById('pare');
-for (let i = 0; i < imagenes.length; i++){
-    if (derecha){
-        derecha.addEventListener('click', function(){
-            pantallaOn.classList.remove('juego1');
-            pantallaOn.classList.remove('screenOff');
-            img.src=imagenes[i];
-            i++;            
-            
-                
-        });
-    }else {
-        console.log('hello world');
-    }
+
+for (let i = 0; i < imagenesDeJuegos.length; i++) {
+    let i = 0;
+
+    botonDerecha.onclick = function(){
+        pantallaOn.classList.remove('screenOff');
+        pantallaOn.classList.remove('backgroundInicio');
+        img.classList.remove('opacity0');
+        pantallaOn.classList.add('screenOn');
+        img.src = imagenesDeJuegos[i];
+
+
+        i = i + 1;
+
+        if( i >= imagenesDeJuegos.length){
+            i = 0;  
+        }
+
+        botonIzquierda.onclick = function(){
+        pantallaOn.classList.remove('screenOff');
+        pantallaOn.classList.remove('backgroundInicio');
+        img.classList.remove('opacity0');
+        pantallaOn.classList.add('screenOn');
+        img.src = imagenesDeJuegos[i];
+
+        i = i - 1;   
+
+        if( i < 0){
+            i = imagenesDeJuegos.length - 1;  
+        }
+        };
+
+
+    };
+
 }
-
-
-
