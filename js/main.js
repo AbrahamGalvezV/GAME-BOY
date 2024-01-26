@@ -20,10 +20,10 @@ botonApagado.addEventListener('click', function() {
 let botonDerecha = document.querySelector('.derecha');
 let botonIzquierda = document.querySelector('.izquierda');
 
-let img1 = "../img/juego1.png";
-let img2 = "../img/juego2.png";
-let img3 = "../img/juego3.png";
-let img4 = "../img/juego4.png";
+let img1 = "./img/juego1.png";
+let img2 = "./img/juego2.png";
+let img3 = "./img/juego3.png";
+let img4 = "./img/juego4.png";
 
 let imagenesDeJuegos =[img1, img2, img3, img4];
 let img = document.getElementById('img');
