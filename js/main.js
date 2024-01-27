@@ -2,7 +2,6 @@ let botonEncendido = document.getElementById('start');
 let botonApagado = document.getElementById('off'); 
 let pantallaOff = document.getElementById('screenOff'); 
 let pantallaOn = document.getElementById('screenOn');
-let audio = new Audio();
 
 
 botonEncendido.addEventListener('click', function() {
@@ -10,9 +9,6 @@ botonEncendido.addEventListener('click', function() {
     pantallaOn.classList.add('screenOn');
     pantallaOn.classList.add('backgroundInicio');
     img.classList.add('opacity0');
-    audio.src="../audio/music_gb-start.mp3";
-
-    audio.play();
 });
 
 botonApagado.addEventListener('click', function() {
