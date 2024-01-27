@@ -16,7 +16,7 @@ La parte visual de este proyecto está enteramente creada con CSS. GAME BOY est�
 ###### En la parte central bajo la pantalla de la consola encontramos el botón on/off
 ![](./img/on-off.png)
 
-Al presionar el botón izquierdo se activa la pantalla y visualiza la pantalla de homme.
+Al presionar el botón izquierdo se activa la pantalla mientras suena un tono de inicio y visualiza la pantalla de homme.
 Al presionar el botón de la derecha se apagará la consola.
 
 ###### En la parte izquierda bajo la pantalla de la consola encontramos los botones derecha/izquierda.
